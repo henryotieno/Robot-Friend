@@ -12,9 +12,8 @@ h1 {
 .head, 
 .left_arm, 
 .torso, 
-.right_arm, 
-.left_leg, 
-.right_leg {
+.right_arm
+ {
 	 background-color: #5f93e8;
 }
 
@@ -28,6 +27,9 @@ h1 {
 
 .eyes {
 	display: flex
+}
+.left_leg,.right_leg{
+	color: black;
 }
 
 .head:hover {
@@ -45,6 +47,7 @@ h1 {
 	width: 40px; 
 	height: 125px;
 	border-radius: 100px; 
+	background-color: black;
 } 
 
 .left_arm { 
@@ -57,26 +60,29 @@ h1 {
 
 .torso { 
 	width: 200px; 
-	height: 200px;
+	height: 170px;
 	border-radius: 0 0 50px 50px; 
 } 
 
 .lower_body { 
 	width: 200px; 
-	height: 200px;
+	height: 20px;
 	/* This is another useful property. Hmm what do you think it does?*/
 	margin: 0 auto;
 	display: flex; 
+
 } 
 
 .left_leg, .right_leg { 
 	width: 40px; 
 	height: 120px;
 	border-radius: 0 0 100px 100px; 
+	background-color:#5f93e8;
 } 
 
 .left_leg { 
-	margin-left: 45px; 
+	margin-left: 45px;
+	
 } 
 
 .left_leg:hover {
@@ -113,13 +119,14 @@ h1 {
 
 .right_leg { 
 	margin-left: 30px; 
+
 }
 
 .left_eye, .right_eye { 
 	width: 20px; 
 	height: 20px; 
 	border-radius: 15px; 
-	background-color: white;  
+	background-color:red;  
 } 
 
 .left_eye { 
